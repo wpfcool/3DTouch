@@ -18,7 +18,13 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    
+    NSArray * arr = application.shortcutItems;
+    if(arr.count == 0)
+    {
+        UIMutableApplicationShortcutItem * item1 = [[UIMutableApplicationShortcutItem alloc]initWithType:@"com.yc-ai.Touch3D.share" localizedTitle:@"分享" localizedSubtitle:@"" icon:[UIApplicationShortcutIcon iconWithType:UIApplicationShortcutIconTypeShare] userInfo:nil];
+        
+        application.shortcutItems = @[item1];
+    }
     return YES;
 }
 -(void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler
