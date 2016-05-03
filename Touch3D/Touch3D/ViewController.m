@@ -73,9 +73,10 @@
     NSLog(@"%d---%d",indexPath.row,indexPath.section);
     
     UITableViewCell * celll = [_tableView cellForRowAtIndexPath:indexPath];
+    NSLog(@"%f----%f",celll.frame.origin.x,celll.frame.origin.y);
     DetailViewController * detail = [[DetailViewController alloc]init];
     detail.number =_list[indexPath.row];
-    previewingContext.sourceRect = celll.frame;
+    previewingContext.sourceRect = [_tableView convertRect:celll.frame toView:self.view];;
     
     return detail;
     
