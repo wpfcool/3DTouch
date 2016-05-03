@@ -64,9 +64,14 @@
 
 - (nullable UIViewController *)previewingContext:(id <UIViewControllerPreviewing>)previewingContext viewControllerForLocation:(CGPoint)location
 
-
 {
-    NSIndexPath * indexPath = [_tableView indexPathForRowAtPoint:location];
+    
+   CGPoint  pp =  [self.view convertPoint:location toView:_tableView];
+    
+    NSIndexPath * indexPath = [_tableView indexPathForRowAtPoint:pp];
+    
+    NSLog(@"%d---%d",indexPath.row,indexPath.section);
+    
     UITableViewCell * celll = [_tableView cellForRowAtIndexPath:indexPath];
     DetailViewController * detail = [[DetailViewController alloc]init];
     detail.number =_list[indexPath.row];
