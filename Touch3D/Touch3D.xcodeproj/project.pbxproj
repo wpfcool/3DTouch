@@ -213,6 +213,7 @@
 				TargetAttributes = {
 					81EA706B1CD86C53001A8476 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = QPZY6FRDDL;
 					};
 					81EA70841CD86C53001A8476 = {
 						CreatedOnToolsVersion = 7.3;
@@ -421,6 +422,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QPZY6FRDDL;
 				INFOPLIST_FILE = Touch3D/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yc-ai.Touch3D";
@@ -432,6 +434,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QPZY6FRDDL;
 				INFOPLIST_FILE = Touch3D/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yc-ai.Touch3D";
